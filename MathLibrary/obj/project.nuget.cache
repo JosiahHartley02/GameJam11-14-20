@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Xd8WkTEa/qDj+caWgLr8fnaD/kR4Dj/fCuSdhmGCttkkoWbbY+BZz8nK+ubogJoJ1FL4uCEPt2xLrTkf+0lOdw==",
+  "dgSpecHash": "jSZXKvVG4eDPLeVL2keCyG/W7jv7jNpNEFfeahClYfU3xm3e6xgz5pdHJEi3rU5ppw500v1MisBryLWss3FAGg==",
   "success": true,
   "projectFilePath": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\MathLibrary\\MathLibrary.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

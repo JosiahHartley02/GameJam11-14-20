@@ -46,6 +46,7 @@ namespace Game_Jam
             for (int i = 0; i < _entities.Length; i++) { temparray[i] = _entities[i]; }
             temparray[_entities.Length] = entity;
             _entities = temparray;
+            entity.Start();
         }
         public bool RemoveEntity(Entity entity)
         {
@@ -69,10 +70,6 @@ namespace Game_Jam
             }
             _entities = temparray;
             return entityRemoved;
-        }
-        public bool TestCollision
-        {
-
         }
     }
 }

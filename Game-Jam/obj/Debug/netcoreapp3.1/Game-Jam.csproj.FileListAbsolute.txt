@@ -11,3 +11,6 @@ C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcore
 C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.dll
 C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.pdb
 C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.genruntimeconfig.cache
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\MathLibrary.dll
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\MathLibrary.pdb
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.csproj.CopyComplete

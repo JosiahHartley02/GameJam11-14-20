@@ -10,8 +10,6 @@ namespace Game_Jam
         bool _isVisible;
         char Icon;
         bool isFollowing;
-        int _pointsForVisible;
-        public int PointsForVisible;
         public bool IsVisible { get { return _isVisible; } }
         public Followers (float x, float y, char icon = ' ', ConsoleColor color = ConsoleColor.White) : base (x,y,icon,color)
         {
@@ -21,7 +19,9 @@ namespace Game_Jam
         }
         public override void Start()
         {
-            _pointsForVisible = Game.GetCurrentScene().Entities[Game.GetCurrentScene().Entities.Length].PointsForVisible + 1;
+            if (Game.GetCurrentScene().Entities[Game.GetCurrentScene().Entities.Length - 1] == null)
+            { Game.GetCurrentScene().Entities[Game.GetCurrentScene().Entities.Length].PointsForVisible = 0; }
+            _pointsForVisible = Game.GetCurrentScene().Entities[Game.GetCurrentScene().Entities.Length - 1].PointsForVisible + 1;
             base.Start();
         }
         public override void Update()

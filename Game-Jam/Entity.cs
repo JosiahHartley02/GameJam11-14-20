@@ -15,11 +15,11 @@ namespace Game_Jam
         protected Entity _parent;
         protected Entity[] _children;
         protected bool isChild = false;
+        protected int _pointsForVisible = 0;
+        public int PointsForVisible;
         public Vector2 OldPosition { get { return _oldPosition; } }
         public bool Started { get; private set; }
-        public int PointsForVisible;
         public Vector2 LocalPosition;
-        public Vector2 WorldPosition;
         public Entity(float x, float y, char icon = ' ', ConsoleColor color = ConsoleColor.White)
         {
             LocalPosition = new Vector2(x, y);
@@ -34,8 +34,10 @@ namespace Game_Jam
         public virtual void Draw()
         {
             Console.ForegroundColor = _defaultColor;
-            if (WorldPosition.X >=0 && WorldPosition.X < Console.WindowWidth && WorldPosition.Y >= 0 && WorldPosition.Y < Console.WindowHeight)
-            { Console.SetCursorPosition((int)WorldPosition.X,(int)WorldPosition.Y); }
+            if (LocalPosition.X >=0 && LocalPosition.X < Console.WindowWidth && LocalPosition.Y >= 0 && LocalPosition.Y < Console.WindowHeight)
+            { Console.SetCursorPosition((int)LocalPosition.X,(int)LocalPosition.Y);
+                Console.Write(_icon);
+            }
             Console.ForegroundColor = ConsoleColor.White;
         }
         public virtual void End()
