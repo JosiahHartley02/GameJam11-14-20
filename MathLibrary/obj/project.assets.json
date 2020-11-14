@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "MathLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/MathLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MathLibrary.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "MathLibrary/1.0.0": {
-      "type": "project",
-      "path": "../MathLibrary/MathLibrary.csproj",
-      "msbuildProject": "../MathLibrary/MathLibrary.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "MathLibrary >= 1.0.0"
-    ]
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\pc\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\Game-Jam\\Game-Jam.csproj",
-      "projectName": "Game-Jam",
-      "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\Game-Jam\\Game-Jam.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\MathLibrary\\MathLibrary.csproj",
+      "projectName": "MathLibrary",
+      "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\MathLibrary\\MathLibrary.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\Game-Jam\\obj\\",
+      "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\MathLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,11 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\MathLibrary\\MathLibrary.csproj": {
-              "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\Projects\\GameJam11-14-20\\MathLibrary\\MathLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

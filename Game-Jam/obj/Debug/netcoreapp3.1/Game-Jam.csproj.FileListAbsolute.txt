@@ -1,0 +1,13 @@
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\Game-Jam.exe
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\Game-Jam.deps.json
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\Game-Jam.runtimeconfig.json
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\Game-Jam.runtimeconfig.dev.json
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\Game-Jam.dll
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\bin\Debug\netcoreapp3.1\Game-Jam.pdb
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.csprojAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.AssemblyInfo.cs
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.dll
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.pdb
+C:\Users\pc\Documents\GitHub\Projects\GameJam11-14-20\Game-Jam\obj\Debug\netcoreapp3.1\Game-Jam.genruntimeconfig.cache
