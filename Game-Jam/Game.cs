@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Game_Jam
 {
@@ -38,6 +39,7 @@ namespace Game_Jam
             {
                 Update();
                 Draw();
+                Thread.Sleep(250);
             }
         }
         public static int CurrentSceneIndex
@@ -74,6 +76,18 @@ namespace Game_Jam
             if (sceneRemoved) { _scenes = tempArray; }
             return sceneRemoved;
         }
-
+        public static ConsoleKey GetNextKey()
+        {
+            if (!Console.KeyAvailable) { return 0; }
+            return Console.ReadKey(true).Key;
+        }
+        public static bool IsKeyDown(ConsoleKey key)
+        {
+            if(Console.ReadKey(true).Key != key)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

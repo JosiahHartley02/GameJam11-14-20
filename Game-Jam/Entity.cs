@@ -7,6 +7,8 @@ namespace Game_Jam
 {
     class Entity
     {
+        protected Vector2 OldPosition;
+        protected Vector2 OldVelocity;
         protected char _icon;
         protected ConsoleColor _defaultColor;
         protected Vector2 _velocity;

@@ -6,6 +6,7 @@ namespace MathLibrary
     {
         private float _x;
         private float _y;
+        public Vector2() { _x = 0; _y = 0; }
         public Vector2(float x, float y)
         { _x = x; _y = y; }
         public float X { get { return _x; } set { _x = value; } }
