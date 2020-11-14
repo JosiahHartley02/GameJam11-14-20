@@ -7,15 +7,17 @@ namespace Game_Jam
 {
     class Entity
     {
-        protected Vector2 OldPosition;
-        protected Vector2 OldVelocity;
+        protected Vector2 _oldPosition;
+        protected Vector2 _oldVelocity;
         protected char _icon;
         protected ConsoleColor _defaultColor;
-        protected Vector2 _velocity;
+        protected Vector2 _velocity = new Vector2();
         protected Entity _parent;
         protected Entity[] _children;
         protected bool isChild = false;
+        public Vector2 OldPosition { get { return _oldPosition; } }
         public bool Started { get; private set; }
+        public int PointsForVisible;
         public Vector2 LocalPosition;
         public Vector2 WorldPosition;
         public Entity(float x, float y, char icon = ' ', ConsoleColor color = ConsoleColor.White)
@@ -77,5 +79,26 @@ namespace Game_Jam
             return childRemoved;
         }
         public void SetLocalPosition(Vector2 position) { LocalPosition = position; }
+        public bool TestCollision()
+        {
+            for(int i = 0; i < Game.GetCurrentScene().Entities.Length; i++)
+            {
+                if (this.LocalPosition != Game.GetCurrentScene().Entities[i].LocalPosition)
+                    return false;
+            }
+            return true;
+        }
+        public bool WasItMe()
+        {
+            for (int i = 0; i < Game.GetCurrentScene().Entities.Length; i++)
+            {
+                if (this.LocalPosition == Game.GetCurrentScene().Entities[i].LocalPosition)
+                {
+                    if (Game.GetCurrentScene().Entities[i].isChild)
+                    { return true; }
+                }
+            }
+            return false;
+        }
     }
 }

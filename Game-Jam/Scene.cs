@@ -9,6 +9,7 @@ namespace Game_Jam
     {
         private Entity[] _entities;
         private Vector2 WorldPosition;
+        public Entity[] Entities { get { return _entities; } }
         public bool Started { get; private set; }
         public Scene() { _entities = new Entity[0]; }
         public void Start()
@@ -68,6 +69,10 @@ namespace Game_Jam
             }
             _entities = temparray;
             return entityRemoved;
+        }
+        public bool TestCollision
+        {
+
         }
     }
 }

@@ -21,14 +21,19 @@ namespace Game_Jam
         }
         public override void Update()
         {
-            OldVelocity = _velocity;
-            OldPosition = LocalPosition;
+            _oldVelocity = _velocity;
+            _oldPosition = LocalPosition;
             int xDirection = -Convert.ToInt32(Game.IsKeyDown(ConsoleKey.A)) + Convert.ToInt32(Game.IsKeyDown(ConsoleKey.D));
             int yDirection = -Convert.ToInt32(Game.IsKeyDown(ConsoleKey.W)) + Convert.ToInt32(Game.IsKeyDown(ConsoleKey.S));
             _velocity = new Vector2(xDirection, yDirection);
             base.Update();
-            if (LocalPosition == OldPosition)
-                _velocity = OldVelocity;
+            if (LocalPosition == _oldPosition)
+                _velocity = _oldVelocity;
+            if (TestCollision())
+            {
+                if (WasItMe()) { Game.SetGameOver(); }
+                if(!WasItMe()) { AddChild(Game.GetCurrentScene().Entities[Game.GetPoints()]);}
+            }
         }
         public override void Draw()
         {

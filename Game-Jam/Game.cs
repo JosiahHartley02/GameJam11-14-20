@@ -7,6 +7,7 @@ namespace Game_Jam
 {
     class Game
     {
+        private static int _points;
         private static bool _gameOver = false;
         private static Scene[] _scenes;
         private static int _currentSceneIndex;
@@ -88,6 +89,18 @@ namespace Game_Jam
                 return false;
             }
             return true;
+        }
+        public static void AddPoint()
+        {
+            _points++;
+        }
+        public static int GetPoints()
+        {
+            return _points;
+        }
+        public static void SetGameOver()
+        {
+            _gameOver = true;
         }
     }
 }
